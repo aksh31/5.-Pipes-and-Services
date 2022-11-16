@@ -1,0 +1,15 @@
+
+
+
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h3><strong>{{product.name}}</strong></h3>
+        <p>Your Product Name is {{product.name}}</p>
+        <p>Status is {{product.status}}</p>
+        <button class="btn btn-success btn-sm mr-2" (click)="chnageStatus('In Progress', product.id)">In
+            Progress</button>
+        <button class="btn btn-success btn-sm mr-2" (click)="chnageStatus('Dispatched', product.id)">Dispatched</button>
+        <button class="btn btn-success btn-sm" (click)="chnageStatus('Delivered', product.id)">Delivered</button>
+    </div>
+</div>

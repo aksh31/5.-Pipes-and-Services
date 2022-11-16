@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <app-prod-form (objEmitter)="getObjProduct($event)"></app-prod-form>
+      
+      <app-prod-details (statusEmiiter)="onStatusHandler($event)" [product]="product" *ngFor="let product of productsArray"></app-prod-details>
+    </div>
+  </div>
+</div>
